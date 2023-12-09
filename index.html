@@ -21,9 +21,66 @@
                     <img class="icon-nav" src="img/search.svg" alt="search">
                 </div>
                 <div class="nav-right">
-                    <a href="#">
-                        <img src="img/burger_menu.svg" alt="icon">
-                    </a>
+                    <div class="burger-nav">
+                        <img class="burger-link" src="img/burger_menu.svg" alt="icon">
+                        <div class="burger-menu display-none">
+                            <h3 class="heading heading-burger">MENU</h3>
+                            <h3 class="heading heading-nav">MAN</h3>
+                            <ul class="burger-list">
+                                <li>
+                                    <a href="#">Accessories</a>
+                                </li>
+                                <li>
+                                    <a href="#">Bags</a>
+                                </li>
+                                <li>
+                                    <a href="#">Denim</a>
+                                </li>
+                                <li>
+                                    <a href="#">T-Shirts</a>
+                                </li>
+                            </ul>
+                            <h3 class="heading heading-nav">WOMAN</h3>
+                            <ul class="burger-list">
+                                <li>
+                                    <a href="#">Accessories</a>
+                                </li>
+                                <li>
+                                    <a href="#">Jackets & Coats</a>
+                                </li>
+                                <li>
+                                    <a href="#">Polos</a>
+                                </li>
+                                <li>
+                                    <a href="#">T-Shirts</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shirts</a>
+                                </li>
+                            </ul>
+                            <h3 class="heading heading-nav">KIDS</h3>
+                            <ul class="burger-list">
+                                <li>
+                                    <a href="#">Accessories</a>
+                                </li>
+                                <li>
+                                    <a href="#">Jackets & Coats</a>
+                                </li>
+                                <li>
+                                    <a href="#">Polos</a>
+                                </li>
+                                <li>
+                                    <a href="#">T-Shirts</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shirts</a>
+                                </li>
+                                <li>
+                                    <a href="#">Bags</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <a href="#">
                         <img src="img/user_icon.svg" alt="icon">
                     </a>
@@ -79,6 +136,10 @@
             <div class="cards">
                 <div class="card">
                     <img class="card-img" src="img/cards/card-1.jpg" alt="photo">
+                    <button class="button button-card">
+                        <img src="img/cart_icon.svg" alt="icon">
+                        Add to Cart
+                    </button>
                     <div class="card-info">
                         <h3 class="heading">ELLERY X M'O CAPSULE</h3>
                         <p class="text text-card">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -87,6 +148,10 @@
                 </div>
                 <div class="card">
                     <img class="card-img" src="img/cards/card-2.jpg" alt="photo">
+                    <button class="button button-card">
+                        <img src="img/cart_icon.svg" alt="icon">
+                        Add to Cart
+                    </button>
                     <div class="card-info">
                         <h3 class="heading">ELLERY X M'O CAPSULE</h3>
                         <p class="text text-card">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -95,6 +160,10 @@
                 </div>
                 <div class="card">
                     <img class="card-img" src="img/cards/card-3.jpg" alt="photo">
+                    <button class="button button-card">
+                        <img src="img/cart_icon.svg" alt="icon">
+                        Add to Cart
+                    </button>
                     <div class="card-info">
                         <h3 class="heading">ELLERY X M'O CAPSULE</h3>
                         <p class="text text-card">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -103,6 +172,10 @@
                 </div>
                 <div class="card">
                     <img class="card-img" src="img/cards/card-4.jpg" alt="photo">
+                    <button class="button button-card">
+                        <img src="img/cart_icon.svg" alt="icon">
+                        Add to Cart
+                    </button>
                     <div class="card-info">
                         <h3 class="heading">ELLERY X M'O CAPSULE</h3>
                         <p class="text text-card">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -111,6 +184,10 @@
                 </div>
                 <div class="card">
                     <img class="card-img" src="img/cards/card-5.jpg" alt="photo">
+                    <button class="button button-card">
+                        <img src="img/cart_icon.svg" alt="icon">
+                        Add to Cart
+                    </button>
                     <div class="card-info">
                         <h3 class="heading">ELLERY X M'O CAPSULE</h3>
                         <p class="text text-card">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -119,6 +196,10 @@
                 </div>
                 <div class="card">
                     <img class="card-img" src="img/cards/card-6.jpg" alt="photo">
+                    <button class="button button-card">
+                        <img src="img/cart_icon.svg" alt="icon">
+                        Add to Cart
+                    </button>
                     <div class="card-info">
                         <h3 class="heading">ELLERY X M'O CAPSULE</h3>
                         <p class="text text-card">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -186,5 +267,13 @@
                 </li>
             </ul>
         </footer>
+        <script>
+            let btn = document.querySelector('.burger-nav');
+            let menu = document.querySelector('.burger-menu');
+            btn.addEventListener('click', () => {
+                console.log('hi');
+                menu.classList.toggle('display-none');
+            });
+        </script>
     </body>
 </html>

@@ -46,6 +46,39 @@ img {
     width: 29px;
 }
 
+.burger-nav {
+    position: relative;
+}
+
+.burger-menu {
+    position: absolute;
+    top: 51px;
+    background-color: #fff;
+    padding: 32px;
+    width: 232px;
+}
+
+.display-none {
+    display: none;
+}
+
+.burger-list {
+    list-style-type: none;
+}
+
+.burger-list li a {
+    display: block;
+    padding: 6px 0 6px 22px;
+    color: #6F6E6E;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.burger-list li a:hover {
+    color: #F16D7F;
+}
+
+
 .nav-count-cart-position {
     position: relative;
 }
@@ -201,6 +234,14 @@ img {
     margin: 48px 0;
 }
 
+.card {
+    position: relative;
+}
+
+.card-img {
+    transition: all 0.5s;
+}
+
 .card-info {
     padding: 24px 16px;
     display: flex;
@@ -208,10 +249,32 @@ img {
     gap: 16px;
 }
 
+.card:hover .card-img {
+    filter: brightness(50%);
+}
+
+.card:hover .button-card {
+    display: flex;
+}
+
 .heading {
     color: #000;
     font-size: 13px;
     font-weight: 400;
+}
+
+.heading-burger {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.heading-nav {
+    font-size: 14px;
+    font-weight: 400;
+    color: #F16D7F;
+    margin-top: 20px;
+    margin-bottom: 6px;
 }
 
 .card-price {
@@ -227,6 +290,32 @@ img {
     color: #F26376;
     font-size: 16px;
     font-weight: 400;
+    transition: all 0.5s;
+}
+
+.button:hover {
+    background-color: #F26376;
+    color: #fff;
+}
+
+.button-card {
+    border-color: #fff;
+    padding: 10px 14px;
+    color: #fff;
+    font-size: 14px;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    position: absolute;
+    top: 188px;
+    left: 110px;
+    display: none;
+}
+
+.button-card:hover {
+    box-shadow: 6px 4px 35px #fff;
+    background-color: transparent;
 }
 
 .button-subscribe {
@@ -329,7 +418,7 @@ img {
 .footer-icions-links {
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(4, 32px);
+    grid-template-columns: repeat(4, 38px);
     gap: 7px;
 }
 
@@ -338,4 +427,10 @@ img {
     text-align: center;
     padding: 8px 0;
     color: #000;
+    transition: all 0.5s;
+}
+
+.footer-icions-links li:hover {
+    background-color: #F16D7F;
+    color: #fff;
 }
