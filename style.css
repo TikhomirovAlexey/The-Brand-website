@@ -60,6 +60,10 @@ img {
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
+.box-for-nav-modile-display {
+    display: none;
+}
+
 .display-none {
     display: none;
 }
@@ -503,5 +507,97 @@ img {
     .footer {
         padding-top: 24px;
         padding-bottom: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .nav-mobile-display {
+        display: none;
+    }
+
+    .burger-menu {
+        top: 51px;
+        left: -250px;
+        padding: 24px;
+    }
+
+    .box-for-nav-modile-display {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 12px;
+        gap: 12px;
+    }
+
+    .heading-nav {
+        margin-top: 14px;
+    }
+
+    .face {
+        min-height: 363px;
+    }
+
+    .face-img {
+        display: none;
+    }
+
+    .border-before-title {
+        height: 61px;
+    }
+
+    .title {
+        font-size: 38px;
+    }
+
+    .under-title {
+        font-size: 20px;
+    }
+
+    .offers {
+        grid-template-columns: repeat(1, 343px);
+        grid-template-rows: 248px 248px 248px 111px;
+        gap: 32px;
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .offer-accesories {
+        grid-column: 1;
+    }
+
+    .cards {
+        grid-template-columns: repeat(1, 360px);
+        gap: 16px;
+        margin: 64px 0 40px;
+    }
+
+    .text-author {
+        font-size: 18px;
+    }
+
+    .heading-subscribe {
+        line-height: 36px;
+    }
+
+    .text-subscribe {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .subscribe-form {
+        margin-top: 22px;
+    }
+
+    .footer {
+        padding-top: 43px;
+        padding-bottom: 9px;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        gap: 40px;
     }
 }
