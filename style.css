@@ -19,8 +19,8 @@ img {
 }
 
 .header {
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: #222;
 }
 
@@ -33,17 +33,40 @@ img {
 .nav-left {
     display: flex;
     align-items: center;
-    gap: 41px;
+    gap: 26px;
+}
+
+.search-form {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-input {
+    outline: none;
+    border: transparent;
+    padding: 5px 10px;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    color: #222;
+    border-radius: 20px;
 }
 
 .nav-right {
     display: flex;
     align-items: center;
-    gap: 33px;
+    gap: 3px;
 }
 
 .icon-nav {
-    width: 29px;
+    padding: 15px 15px;
+    cursor: pointer;
+}
+
+.icon-nav:hover path {
+    fill: #F16D7F;
 }
 
 .burger-nav {
@@ -95,8 +118,8 @@ img {
     background-color: #F16D7F;
     border-radius: 50%;
     position: absolute;
-    top: -8px;
-    right: -8px;
+    top: 8px;
+    right: 5px;
 }
 
 .face {
@@ -107,22 +130,14 @@ img {
     gap: 64px;
 }
 
-.face-info {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-}
-
-.border-before-title {
-    width: 12px;
-    height: 92px;
-    background-color: #F16D7F;
-}
-
 .title {
     color: #222;
     font-size: 48px;
     font-weight: 900;
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
 }
 
 .under-title {
@@ -152,6 +167,12 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: all 0.3s;
+}
+
+.offer:hover {
+    transform: scale(1.025);
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.356);
 }
 
 .offer-text {
@@ -245,10 +266,11 @@ img {
 
 .card {
     position: relative;
+    background-color: #F8F8F8;
 }
 
 .card-img {
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 .card-info {
@@ -299,7 +321,7 @@ img {
     color: #F26376;
     font-size: 16px;
     font-weight: 400;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 .button:hover {
@@ -409,10 +431,12 @@ img {
     font-size: 14px;
     font-weight: 400;
     opacity: 0.7;
-    padding: 17px 64px 17px 22px;
+    padding: 17px 22px 17px 22px;
+    outline: none;
     border: transparent;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
+    width: 100%;
 }
 
 .footer {
@@ -437,7 +461,7 @@ img {
     text-align: center;
     padding: 8px 0;
     color: #000;
-    transition: all 0.5s;
+    transition: all 0.3s;
     font-size: 16px;
 }
 
@@ -534,6 +558,10 @@ img {
         gap: 12px;
     }
 
+    .mobile-color path {
+        fill: #222
+    }
+
     .heading-nav {
         margin-top: 14px;
     }
@@ -544,10 +572,6 @@ img {
 
     .face-img {
         display: none;
-    }
-
-    .border-before-title {
-        height: 61px;
     }
 
     .title {
