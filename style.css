@@ -36,24 +36,6 @@ img {
     gap: 26px;
 }
 
-.search-form {
-    display: flex;
-    gap: 18px;
-    justify-content: center;
-    align-items: center;
-}
-
-.search-input {
-    outline: none;
-    border: transparent;
-    padding: 5px 10px;
-    background-color: #fff;
-    font-size: 14px;
-    font-weight: 400;
-    color: #222;
-    border-radius: 20px;
-}
-
 .nav-right {
     display: flex;
     align-items: center;
@@ -65,9 +47,6 @@ img {
     cursor: pointer;
 }
 
-.icon-nav:hover path {
-    fill: #F16D7F;
-}
 
 .burger-nav {
     position: relative;
@@ -83,11 +62,15 @@ img {
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
-.box-for-nav-modile-display {
+#burger-checkbox {
     display: none;
 }
 
-.display-none {
+#burger-checkbox:checked+.burger-menu {
+    display: none;
+}
+
+.box-for-nav-modile-display {
     display: none;
 }
 
